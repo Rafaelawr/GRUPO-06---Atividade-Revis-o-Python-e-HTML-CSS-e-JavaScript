@@ -1,14 +1,4 @@
-.input_altura{
-    position: relative;
-    display: inline-block;
-    width: 100%;
-}
 
-.input_peso{
-    position: relative;
-    display: inline-block;
-    width: min-content;
-}
 
 body{
     background-image: url('background.jpg');
@@ -20,4 +10,53 @@ body{
     padding: 0%;
     min-width: 100vh;
     display: flex;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px; 
+    width: 90%;
+}
+.input_peso {
+    position: relative; /* Essencial para posicionar o ícone absolutamente dentro dela */
+    display: inline-block; /* Permite que a div se ajuste ao conteúdo e mantenha a linha */
+    width: 100%; /* Faz a div ocupar 100% da largura disponível no container */
+    margin-bottom: 10px; /* Adiciona um pequeno espaço abaixo de cada grupo input/ícone */
+}
+
+.icone_peso{
+    width: 37px;
+    height: 37px;
+}
+.input_altura {
+    position: relative; /* Essencial para posicionar o ícone absolutamente dentro dela */
+    display: inline-block; /* Permite que a div se ajuste ao conteúdo e mantenha a linha */
+    width: 100%; /* Faz a div ocupar 100% da largura disponível no container */
+    margin-bottom: 10px; /* Adiciona um pequeno espaço abaixo de cada grupo input/ícone */
+}
+
+/* Estilo para o campo de input */
+.input-com-icone input {
+    padding-right: 40px; /* Espaço à direita dentro do input para o ícone */
+    width: calc(100% - 40px); /* Garante que o input ocupe a largura total menos o padding */
+    box-sizing: border-box; /* Inclui padding e borda na largura total do elemento */
+    height: 35px; /* Altura padrão para os inputs, ajuste conforme necessário */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilo para as imagens usadas como ícones */
+input_altura {
+    position: absolute; /* Posição absoluta em relação ao .input-com-icone */
+    right: 10px; /* Distância da borda direita do input */
+    top: 50%; /* Alinha o ícone verticalmente no meio */
+    transform: translateY(-50%); /* Ajuste fino para centralização vertical */
+    pointer-events: none; /* Permite clicar no input mesmo que o mouse esteja sobre o ícone */
+    width: 24px; /* Tamanho do ícone, ajuste se suas imagens são muito grandes */
+    height: 24px; /* Tamanho do ícone, ajuste se suas imagens são muito grandes */
+    object-fit: contain; /* Garante que a imagem se ajuste dentro do tamanho definido sem distorcer */
 }
