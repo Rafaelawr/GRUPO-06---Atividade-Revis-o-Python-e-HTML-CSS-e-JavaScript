@@ -10,53 +10,91 @@ body{
     padding: 0%;
     min-width: 100vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
 }
 
 .container {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #ec991d;
     padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
     text-align: center;
-    max-width: 400px; 
-    width: 90%;
-}
-.input_peso {
-    position: relative; /* Essencial para posicionar o ícone absolutamente dentro dela */
-    display: inline-block; /* Permite que a div se ajuste ao conteúdo e mantenha a linha */
-    width: 100%; /* Faz a div ocupar 100% da largura disponível no container */
-    margin-bottom: 10px; /* Adiciona um pequeno espaço abaixo de cada grupo input/ícone */
+    width: 500px;
+    max-width: 90%;
 }
 
-.icone_peso{
-    width: 37px;
-    height: 37px;
+h2 {
+    color: #f8f6f6;
+    margin-bottom: 35px;
 }
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #fcfafa;
+    font-weight: bold;
+    text-align: left;
+}
+
+.input_peso,
 .input_altura {
-    position: relative; /* Essencial para posicionar o ícone absolutamente dentro dela */
-    display: inline-block; /* Permite que a div se ajuste ao conteúdo e mantenha a linha */
-    width: 100%; /* Faz a div ocupar 100% da largura disponível no container */
-    margin-bottom: 10px; /* Adiciona um pequeno espaço abaixo de cada grupo input/ícone */
+    display: flex;
+    align-items: center;
+    border: 1px solid #999797;
+    border-radius: 8px;
+    padding: 8px 10px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
 }
 
-/* Estilo para o campo de input */
-.input-com-icone input {
-    padding-right: 40px; /* Espaço à direita dentro do input para o ícone */
-    width: calc(100% - 40px); /* Garante que o input ocupe a largura total menos o padding */
-    box-sizing: border-box; /* Inclui padding e borda na largura total do elemento */
-    height: 35px; /* Altura padrão para os inputs, ajuste conforme necessário */
-    border: 1px solid #ccc;
-    border-radius: 4px;
+input[type="number"] {
+    flex-grow: 1;
+    border: none;
+    padding: 5px 0;
+    font-size: 1em;
+    outline: none; 
+    background-color: transparent; 
 }
 
-/* Estilo para as imagens usadas como ícones */
-input_altura {
-    position: absolute; /* Posição absoluta em relação ao .input-com-icone */
-    right: 10px; /* Distância da borda direita do input */
-    top: 50%; /* Alinha o ícone verticalmente no meio */
-    transform: translateY(-50%); /* Ajuste fino para centralização vertical */
-    pointer-events: none; /* Permite clicar no input mesmo que o mouse esteja sobre o ícone */
-    width: 24px; /* Tamanho do ícone, ajuste se suas imagens são muito grandes */
-    height: 24px; /* Tamanho do ícone, ajuste se suas imagens são muito grandes */
-    object-fit: contain; /* Garante que a imagem se ajuste dentro do tamanho definido sem distorcer */
+.icone_peso,
+.icone_alt {
+    width: 24px; 
+    height: 24px;
+    margin-left: 10px;
+    opacity: 1;
+}
+
+button {
+    background-color: #015c5a;
+    color: rgb(249, 249, 250);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 15px; /* Espaço acima dos botões */
+    margin-right: 10px; /* Espaço entre os botões */
+    transition: background-color 0.3s ease; /* Transição suave para o hover */
+}
+
+button:hover {
+    background-color: #03009d;
+}
+
+#limpar { /* Estilo específico para o botão de limpar */
+    background-color: #06837f; /* Cor cinza para o botão de limpar */
+}
+
+#limpar:hover {
+    background-color: #091b4d;
+}
+
+#resultado {
+    margin-top: 39px; /* Espaço acima do resultado */
+    font-size: 1.4em;
+    color: #f4f3f7;
+    font-weight: bold;
 }

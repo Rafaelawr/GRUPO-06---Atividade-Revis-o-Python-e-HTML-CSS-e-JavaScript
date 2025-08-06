@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const pesoInput = document.getElementById("peso");
     const alturaInput = document.getElementById("altura");
     const resultadoDiv = document.getElementById("resultado");
+    const limpar = document.getElementById("limpar");
 
      calcularButton.addEventListener("click", function () {
         const peso = parseFloat(pesoInput.value);
@@ -13,6 +14,12 @@ document.addEventListener("DOMContentLoaded", function () {
         resultadoDiv.textContent = `Seu IMC é ${imc.toFixed(2)}. ${situacao}`;
     
     });
+
+    limpar.addEventListener("click", function(){
+        pesoInput.value = " ";
+        alturaInput.value= " ";
+        resultadoDiv.textContent = " "
+    })
 
      function calcularIMC(peso, altura) {
         return peso / (altura * altura);

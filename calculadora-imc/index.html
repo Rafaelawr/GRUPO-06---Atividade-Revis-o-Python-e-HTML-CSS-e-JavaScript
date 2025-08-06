@@ -10,27 +10,31 @@
 <body>
     <div class="container">
         <h2>Calculadora de IMC</h2>
-        <form method="post">
+        
             <label for="peso">Peso (em KG):</label> 
             <div class="input_peso">
-                <input type="number" id="peso" name="peso" required>
+                <input type="number" id="peso" name="peso" required step="any">
                 <img src="perda-de-peso.png" alt="icone_peso" class="icone_peso">
             </div>
             <br>
             
             <label for="altura">Altura (em metros):</label>
             <div class="input_altura">
-                <input type="number" id="altura" name="altura" required>
+                <input type="number" id="altura" name="altura" required step="any">
                 <img src="altura.png" alt="icone_alt" class="icone_alt">
             </div>
 
             <button id="calcular">Calcular</button>
+            <br>
+            <button id="limpar">Limpar</button>
 
             <div id="resultado"></div>
+            <br>
+
         </form>
     </div>
     
     <script src="script.js"></script>
+   
     
 </body>
-</html>d="peso" name="peso" required>
