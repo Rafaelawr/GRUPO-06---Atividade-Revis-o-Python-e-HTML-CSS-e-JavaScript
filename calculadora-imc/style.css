@@ -1,0 +1,23 @@
+.input_altura{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.input_peso{
+    position: relative;
+    display: inline-block;
+    width: min-content;
+}
+
+body{
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0%;
+    padding: 0%;
+    min-width: 100vh;
+    display: flex;
+}
