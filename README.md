@@ -18,7 +18,7 @@ Atividade em grupo dividido em duas partes:
 - 1° Desenvolver, em Python, uma função chamada <i><b> contador </b></i> que reveberá uma string e retornará um dicionário com a contagem da ocorrência de cada palavra.
 
 - 2° Desenvolver uma página web simples com uma calculadora de IMC.
-&nbsp,&nbsp,&nbsp,&nbsp,<p> Deve ter:</p>
+  <p> Deve ter:</p>
 
   - HTML - fomulário com campo de peso, altura e botão calcular
   - CSS - Layout e formatação
