@@ -1,16 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <div class="container">
+        <h2>Calculadora de IMC</h2>
+        
+            <label for="peso">Peso (em KG):</label> 
+            <div class="input_peso">
+                <input type="number" id="peso" name="peso" required step="any">
+                <img src="perda-de-peso.png" alt="icone_peso" class="icone_peso">
+            </div>
+            <br>
+            
+            <label for="altura">Altura (em metros):</label>
+            <div class="input_altura">
+                <input type="number" id="altura" name="altura" required step="any">
+                <img src="altura.png" alt="icone_alt" class="icone_alt">
+            </div>
 
-    <h2>CALCULA SEU PESADELO</h2>
+            <button id="calcular">Calcular</button>
+            <br>
+            <button id="limpar">Limpar</button>
 
-    <h4>Insira seu peso (em quilogramas).</h4>
+            <div id="resultado"></div>
+            <br>
+
+        </form>
+    </div>
     
+    <script src="script.js"></script>
+   
     
 </body>
-</html>
