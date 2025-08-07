@@ -24,7 +24,6 @@ Atividade em grupo dividido em duas partes:
   - CSS - Layout e formatação
   - JS - lógica para calcular o índice de massa corporal, e classificar o peso
 <br>
-<br>
 
 ## ☛ Tecnologias
 <br>
@@ -38,7 +37,6 @@ CSS
 HTML
 
 IDE = Visual Studio Code
-<br>
 <br>
 
 ## Estrutura do projeto
@@ -64,8 +62,7 @@ IDE = Visual Studio Code
 <br>|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- contador.py
 <br>|
 <br>|__ README.md
-
-
+<br>
 
 ## ☛ Autores
 
