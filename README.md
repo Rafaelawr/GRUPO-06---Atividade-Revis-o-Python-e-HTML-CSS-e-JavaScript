@@ -29,6 +29,7 @@ Atividade em grupo dividido em duas partes:
 
 ## ☛ Tecnologias
 <br>
+
 Python 
 
 Java Script
