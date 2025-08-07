@@ -7,6 +7,7 @@
 
 Matéria Frameworks Full Stack - professor Giovani Bontempo
 <br>
+<br>
 
 ## ☛ Descrição
 <br>
@@ -22,7 +23,6 @@ Atividade em grupo dividido em duas partes:
   - HTML - fomulário com campo de peso, altura e botão calcular
   - CSS - Layout e formatação
   - JS - lógica para calcular o índice de massa corporal, e classificar o peso
-
 <br>
 <br>
 
