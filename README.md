@@ -7,7 +7,6 @@
 
 Matéria Frameworks Full Stack - professor Giovani Bontempo
 <br>
-<br>
 
 ## ☛ Descrição
 <br>
